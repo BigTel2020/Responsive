@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+div{
+  background-color: red; 
+  margin: auto; 
+  width: 100px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
