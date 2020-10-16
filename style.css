@@ -16,6 +16,9 @@ header{
     height: 400px;
     text-align: center;
 }
+header .mobile{
+    display: none;
+}
 header .logo a{
    background-image: url("/img/logo.png"); 
    background-size: 300px;
@@ -40,12 +43,28 @@ nav li{
     padding: 2px;
     margin-left: 20px;
 }
+
+
+/* Responsive Rules*/
+@media screen and (max-width: 800px){
+    header{
+        height: 250px;
+        background-position: 0 --40px;
+    }
+header .mobile{
+    display: inline-block;
+}
+header .desktop{
+    display: none;
+}
+}
 /* Feautures */
 .feautures{
     background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .feautures figure{
     text-transform: uppercase;
@@ -59,7 +78,12 @@ nav li{
     width: 200px;
     box-shadow: black 10px 10px 10px;
 }
-
+/* Responsive Rules */
+/* @media screen and (max-width: 800px){
+.feautures{
+    display: block;
+}
+} */
 /* Footer */
 footer{
     background-color: black;
