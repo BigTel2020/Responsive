@@ -5,28 +5,34 @@
 body{
     background-color: grey;
 }
+/* Header */
 header{
-    background-color: black;
+    background-color:gray;
+    background-image: url("/img/swirl.png");
+    background-size: 100%;
+    background-position: center;
     color: white;
     padding: 20px;
+    height: 400px;
+    text-align: center;
 }
-section{
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
+header .logo a{
+   background-image: url("/img/logo.png"); 
+   background-size: 300px;
+   background-repeat: no-repeat;
+   display: inline-block;
+   height: 80px;
+   position: relative;
+   text-indent: -99999999px;
+   top: -px;
+   width: 300px;
 }
-div{
-  background-color: black; 
-  margin: auto; 
-  width: 100px;
-}
-ul{
+nav ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-li{
+nav li{
     display: inline-block;
     margin-right: 20px;
     background-color: gainsboro;
@@ -34,25 +40,31 @@ li{
     padding: 2px;
     margin-left: 20px;
 }
-section.feauture-box{
+/* Feautures */
+.feautures{
+    background-color: white;
+    padding: 20px;
     display: flex;
+    flex-direction: row;
 }
-section.feauture-box.sales div{
-  background-color:grey;  
-  width: 100%;
-  margin: 1px;
+.feautures figure{
+    text-transform: uppercase;
+  text-align: center; 
+  margin: auto; 
+  width: 100px;
 }
-section.feauture-box.closeouts div{
-  background-color: red;  
-  width: 100%;
-  margin: 1px;
+.feautures figure img{
+    border: 1px solid yellow;
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: black 10px 10px 10px;
 }
-li:first-child{
-    margin-left: 0;
-    background-color: red;
-}
+
+/* Footer */
 footer{
     background-color: black;
-    color: white;
-    padding: 10px 20px;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
 }
